@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Join Us - Fitness Freak</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <section class="join-section">
+    <h2 class="form-title">Join <span>Fitness Freak</span> Now</h2>
+    <form id="joinForm">
+      <div class="form-group">
+        <input type="text" id="name" name="name" required placeholder="Full Name">
+      </div>
+      <div class="form-group">
+        <input type="email" id="email" name="email" required placeholder="Email Address">
+      </div>
+      <div class="form-group">
+        <input type="tel" id="phone" name="phone" required placeholder="Phone Number">
+      </div>
+      <div class="form-group">
+        <input type="number" id="age" name="age" required placeholder="Age">
+      </div>
+      <div class="form-group photo-upload">
+  <label for="photo">Upload Your Photo</label>
+  <input type="file" id="photo" accept="image/*" onchange="previewImage(event)" />
+  <div class="photo-preview">
+    <img id="photoPreview" src="#" alt="Photo Preview" style="display:none;" />
+  </div>
+</div>
+
+      <div class="form-group">
+        <select id="goal" name="goal" required>
+          <option value="" disabled selected>Select Your Goal</option>
+          <option value="weight_loss">Weight Loss</option>
+          <option value="muscle_gain">Muscle Gain</option>
+          <option value="fitness">Stay Fit</option>
+        </select><br>
+
+         <div class="form-group">
+        <select id="goal" name="goal" required>
+          <option value="" disabled selected>Which Membership You Taken</option>
+          <option value="basic">Basic</option>
+          <option value="standard">Standard</option>
+          <option value="premium">Preminum</option>
+          <option value="elite">Elite</option>
+                </select>
+      </div>
+      <div class="form-group">
+        <textarea id="message" name="message" placeholder="Any special message or condition"></textarea>
+      </div>
+      <div class="form-buttons">
+        <button type="submit" class="btn submit">Submit</button>
+        <button type="reset" class="btn reset">Reset</button>
+      </div>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

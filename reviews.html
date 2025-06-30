@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member Reviews - Fitness Freak</title>
+    <link rel="stylesheet" href="reviews.css">
+    <script defer src="reviews.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+    <section class="review-section">
+        <h2 class="review-heading"><span class="white-text">What My Members</span> <span class="red-text">Review</span></h2>
+
+        <div class="reviews-container">
+
+            <!-- Member Review Card 1 -->
+            <div class="review-card">
+                <img src="images/gaurav taneja.jpg" alt="Member 1">
+                <h3 class="member-name">Rahul Singh</h3>
+                <p class="member-review">Amazing transformation journey. Trainers are highly motivating!</p>
+                <div class="stars">★★★★★</div>
+            </div>
+
+            <!-- Repeat for other members -->
+            <div class="review-card">
+                <img src="images/bodybuilder 1.jpg" alt="Member 2">
+                <h3 class="member-name">Pooja Mehra</h3>
+                <p class="member-review">Excellent equipment and energetic vibe. I love coming here.</p>
+                <div class="stars">★★★★☆</div>
+            </div>
+
+            <div class="review-card">
+                <img src="images/bodybuilder 2.jpg" alt="Member 3">
+                <h3 class="member-name">Rohit Yadav</h3>
+                <p class="member-review">Great for muscle building and weight loss. Recommended!</p>
+                <div class="stars">★★★★★</div>
+            </div>
+
+            <div class="review-card">
+                <img src="images/bodybuilder 3.jpg" alt="Member 4">
+                <h3 class="member-name">Nisha Gupta</h3>
+                <p class="member-review">Supportive trainers, perfect for beginners and pros.</p>
+                <div class="stars">★★★★☆</div>
+            </div>
+
+             <div class="review-card">
+                <img src="images/bodybuilder 4.jpg" alt="Member 4">
+                <h3 class="member-name">Nisha Gupta</h3>
+                <p class="member-review">Supportive trainers, perfect for beginners and pros.</p>
+                <div class="stars">★★★★☆</div>
+            </div>
+
+
+
+             <div class="review-card">
+                <img src="images/bodybuilder 5.jpg" alt="Member 4">
+                <h3 class="member-name">Nisha Gupta</h3>
+                <p class="member-review">Supportive trainers, perfect for beginners and pros.</p>
+                <div class="stars">★★★★☆</div>
+            </div>
+
+
+
+
+             <div class="review-card">
+                <img src="images/bodybuilder 6.jpg" alt="Member 4">
+                <h3 class="member-name">Nisha Gupta</h3>
+                <p class="member-review">Supportive trainers, perfect for beginners and pros.</p>
+                <div class="stars">★★★★☆</div>
+            </div>
+            <!-- Add more as needed -->
+
+        </div>
+
+        <button class="add-review-btn" onclick="openForm()">Add Your Review</button>
+
+        <!-- Review Popup Form -->
+        <div class="popup-form" id="reviewForm">
+            <form id="reviewFormElement">
+                <h3>Add Your Review</h3>
+                <input type="text" placeholder="Your Name" id="userName" required>
+                <input type="file" accept="image/*" id="userPhoto" required>
+                <textarea placeholder="Write your review..." id="userReview" required></textarea>
+                <select id="userRating" required>
+                    <option value="">Rating</option>
+                    <option value="★★★★★">5 Stars</option>
+                    <option value="★★★★☆">4 Stars</option>
+                    <option value="★★★☆☆">3 Stars</option>
+                    <option value="★★☆☆☆">2 Stars</option>
+                    <option value="★☆☆☆☆">1 Star</option>
+                </select>
+                <button type="submit">Submit</button>
+                <button type="button" class="close-btn" onclick="closeForm()">Cancel</button>
+            </form>
+        </div>
+    </section>
+
+</body>
+</html>

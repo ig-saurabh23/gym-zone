@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #111;
+    color: white;
+}
+
+.review-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.review-heading {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.review-heading .white-text {
+    color: white;
+}
+
+.review-heading .red-text {
+    color: red;
+}
+
+.reviews-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.review-card {
+    background-color: #1c1c1c;
+    border: 2px solid red;
+    border-radius: 15px;
+    padding: 20px;
+    width: 270px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.review-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 15px red;
+}
+
+.review-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 3px solid red;
+  box-shadow: 0 0 12px rgba(255, 0, 0, 0.5);
+}
+
+
+.member-name {
+    color: white;
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.member-review {
+    color: red;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.stars {
+    color: yellow;
+    font-size: 1.2rem;
+}
+
+.add-review-btn {
+    margin-top: 40px;
+    padding: 12px 25px;
+    font-size: 1rem;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.add-review-btn:hover {
+    background-color: white;
+    color: red;
+    border: 1px solid red;
+}
+
+.popup-form {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #222;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px red;
+    z-index: 1000;
+}
+
+.popup-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.popup-form input,
+.popup-form textarea,
+.popup-form select {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid red;
+    background-color: #111;
+    color: white;
+}
+
+.popup-form button {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+.popup-form .close-btn {
+    background-color: gray;
+}
